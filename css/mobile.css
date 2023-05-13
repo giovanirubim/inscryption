@@ -1,0 +1,16 @@
+body{
+	background-image: url("../img/phone-wallpaper.png");
+	font-size: 200%;
+	touch-action: manipulation;
+}
+img{
+	width: 220px;
+}
+#container {
+	margin-left: 20px;
+}
+button{
+	width: 220px;
+	height: 125px;
+
+}

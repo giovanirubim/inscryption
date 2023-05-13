@@ -1,0 +1,24 @@
+body {
+	background-image: url("../img/pc-wallpaper.png");
+}
+.card {
+	width: 88px;
+}
+.sigil {
+	width: 48px;
+}
+h3 {
+	margin-bottom: 0px;
+}
+#container {
+	display: grid;
+	grid-gap: 0px;
+	grid-auto-flow: column;
+}
+#rand3Player{
+	grid-column-start: 2;
+}
+button{
+	width: 88px;
+	height: 42px;
+}
