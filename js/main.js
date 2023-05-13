@@ -1,3 +1,10 @@
+const loadImage = (src) => new Promise((done, fail) => {
+	const img = document.createElement('img');
+	img.onload = () => done(img);
+	img.onerror = (err) => fail(err);
+	img.src = src;
+});
+
 const delay = (ms) => new Promise(f => setTimeout(f, ms));
 
 const removeRandomItemFromSet = (set) => {
@@ -14,6 +21,7 @@ const randomizeGroup = async (div, cards) => {
 	for (const img of imgs) {
 		const name = removeRandomItemFromSet(set);
 		const src = `./img/pixel-${name}.png`;
+		await loadImage(src);
 		transition(img, src);
 		await delay(100);
 	}
